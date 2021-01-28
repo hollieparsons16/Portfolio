@@ -1,0 +1,389 @@
+/* Extra small devices (phones, 600px and down) (max-width: 600px) */
+
+body, html {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #002E5C;
+    margin: 0;
+    background: #FBFBFA;
+    height: 100%;
+    position: relative;
+}
+
+.tools-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+}
+
+#top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 10;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    background: #FBFBFA;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.logo {
+    width: 200px;
+}
+
+/* ***Nav bar*** */
+
+#nav-items {
+    display: none;
+    flex-direction: column;
+    font-size: 24px;
+    margin: 16px;
+    line-height: 60px;
+    color: inherit;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active-nav-item {
+    text-decoration: underline;
+}
+
+#nav-open {
+    height: 30px;
+    cursor: pointer;
+}
+
+#nav-close {
+    height: 30px;
+    cursor: pointer;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+/* ***ipad-nav-bar*** */
+
+#large-nav-items {
+    display: none;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    /* CHANGE THE MARGIN TO THE HEIGHT OF THE nav bar */
+    margin: 60px 1em 0 1em;
+    position: relative;
+    min-height: calc(100vh - 150px);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.content-container-about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+/* ***projects*** */
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 24px 0;
+}
+
+.project:hover {
+    text-decoration: none;
+}
+
+.project-text {
+    margin: 0 0 0 0;
+}
+
+.project-summary {
+    text-align: justify;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.project-image {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+}
+
+.project-tools-deliverables-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ***about me*** */
+
+.summary-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 0 16px 0;
+}
+
+.profile-image {
+    width: 150px;
+}
+
+.summary-text {
+    margin: 16px 0;
+    text-align: justify;
+}
+
+.about-me-text {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    margin: 0 0 8px 0;
+}
+
+.tools-deliverables-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tools-deliverables {
+    margin: 8px 0 16px 0;
+}
+
+h4 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.deliverables-tools-item {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 10px 8px 0;
+    font-weight: 400;
+}
+
+/* ***case study*** */
+
+h3 {
+    font-size: 21px;
+}
+
+.case-study-image-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.case-study-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inline-image {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.004em;
+}
+
+.case-study-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.004em;
+}
+
+.case-study-list {
+    margin: 0 0 24px 0;
+}
+
+/* ***Footer*** */
+
+footer {
+    color: white;
+    background: #333;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+.email {
+    font-style: normal;
+    padding: 4px 0 4px 0;
+}
+
+.media-image {
+    height: 25px;
+    width: 25px;
+    margin: 0 10px 0 0;
+}
+
+.media-button {
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.media-link {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+
+.media-link:hover {
+    text-decoration: underline;
+}
+
+.coded-by {
+    margin: 12px 0 8px 0;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 662px) {
+    .display-block {
+        display: none;
+    }
+    .top-nav {
+        justify-content: center;
+        padding: 10px 32px;
+    }
+    #large-nav-items {
+        display: flex;
+    }
+    .page-container {
+        margin: 60px 0 0 0;
+    }
+    .content-container {
+        max-width: 600px;
+    }
+    .content-container-about {
+        max-width: 650px;
+    }
+    .project {
+        flex-direction: row;
+        margin: 0 0 48px 0;
+    }
+    .project-text {
+        margin: 0 24px 0 0;
+    }
+    .project-image {
+        max-width: 150px;
+        width: 100%;
+        height: 150px;
+    }
+    .case-study-image-header {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+    }
+    .summary-box {
+        flex-direction: row-reverse;
+    }
+    .summary-text {
+        margin: 0 16px 0 0;
+    }
+    .tools-list-col1 {
+        width: 100%;
+    }
+    ul {
+        flex-direction: row;
+        width: 100%;
+    }
+    .project-tools-deliverables-container {
+        flex-direction: row;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .content-container {
+            max-width: 600px;
+        }
+        .content-container-about {
+            max-width: 600px;
+        }
+        .profile-image {
+            width: 200px;
+        }
+    }
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {}
