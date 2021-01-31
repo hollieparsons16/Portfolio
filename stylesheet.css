@@ -125,13 +125,13 @@ a:visited {
     max-width: 400px;
 }
 
-.content-container-about {
+/* .content-container-about {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 400px;
-}
+} */
 
 /* ***projects*** */
 
@@ -159,6 +159,11 @@ a:visited {
 .project-summary {
     text-align: justify;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.003em;
+    margin: 0 0 16px 0;
 }
 
 .project-image {
@@ -166,6 +171,11 @@ a:visited {
     width: 100%;
     height: 200px;
     object-fit: fill;
+}
+
+figcaption {
+    color: #757575;
+    margin-top: 8px;
 }
 
 .project-tools-deliverables-container {
@@ -184,19 +194,13 @@ a:visited {
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .summary-text {
     margin: 16px 0;
     text-align: justify;
-}
-
-.about-me-text {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 16px;
-    margin: 0 0 16px 0;
 }
 
 .tools-deliverables-container {
@@ -213,7 +217,7 @@ a:visited {
 }
 
 .tools-deliverables {
-    margin: 32px 0 32px 0;
+    margin: 16px 0 16px 0;
 }
 
 h4 {
@@ -253,22 +257,21 @@ h3 {
 
 p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 21px;
-    line-height: 1.58;
-    letter-spacing: -.004em;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: .003em;
 }
 
 .case-study-text {
     display: flex;
     flex-direction: column;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 21px;
-    line-height: 1.58;
-    letter-spacing: -.004em;
 }
 
 .case-study-list {
-    margin: 0 0 24px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.003em;
 }
 
 /* ***Footer*** */
@@ -332,7 +335,7 @@ footer {
         margin: 60px 0 0 0;
     }
     .content-container {
-        max-width: 600px;
+        max-width: 680px;
     }
     .content-container-about {
         max-width: 650px;
@@ -360,7 +363,7 @@ footer {
         align-items: flex-start;
     }
     .summary-text {
-        margin: 0 32px 0 0;
+        margin: 0 16px 0 0;
     }
     .tools-list-col1 {
         width: 100%;
@@ -377,17 +380,18 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
+    p {
+        font-size: 21px;
+        line-height: 32px;
+    }
+    .case-study-list {
+        font-size: 21px;
+        line-height: 32px;
+    }
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-        .content-container {
-            max-width: 600px;
-        }
         .content-container-about {
             max-width: 600px;
-        }
-        .profile-image {
-            width: 200px;
-            height: 200px
         }
     }
     /* Extra large devices (large laptops and desktops, 1200px and up) */
