@@ -157,7 +157,7 @@ a:visited {
 }
 
 .project-summary {
-    text-align: justify;
+    text-align: left;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 28px;
     font-weight: 400;
@@ -209,6 +209,13 @@ figcaption {
     justify-content: space-between;
 }
 
+.deliverables-tools-item {
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.003em;
+}
+
 .tools-list {
     display: flex;
     flex-wrap: wrap;
@@ -218,6 +225,13 @@ figcaption {
 
 .tools-deliverables {
     margin: 16px 0 16px 0;
+}
+
+.tool-name {
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.003em;
 }
 
 h4 {
@@ -388,11 +402,28 @@ footer {
         font-size: 21px;
         line-height: 32px;
     }
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
-        .content-container-about {
-            max-width: 600px;
-        }
+    .project-summary {
+        font-size: 21px;
+        line-height: 32px;
     }
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {}
+    .tool-name {
+        font-size: 21px;
+        line-height: 32px;
+    }
+    .deliverables-tools-item {
+        font-size: 21px;
+        line-height: 32px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .content-container-about {
+        max-width: 600px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
