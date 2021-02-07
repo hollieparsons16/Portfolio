@@ -125,14 +125,6 @@ a:visited {
     max-width: 400px;
 }
 
-/* .content-container-about {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 400px;
-} */
-
 /* ***projects*** */
 
 .project-container {
@@ -287,6 +279,10 @@ p {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.003em;
+}
+
+li {
+    margin: 0 0 16px 0;
 }
 
 /* ***Footer*** */
