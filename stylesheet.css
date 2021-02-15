@@ -329,7 +329,7 @@ footer {
     margin: 12px 0 8px 0;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 662px and up) */
 
 @media only screen and (min-width: 662px) {
     .display-block {
@@ -357,6 +357,7 @@ footer {
     }
     .project-text {
         margin: 0 24px 0 0;
+        min-width: 510px;
     }
     .project-image {
         max-width: 150px;
